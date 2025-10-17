@@ -13,7 +13,6 @@
 
 header.masthead {
   background: linear-gradient(135deg, var(--cor-titulo), var(--cor-principal));
-
 }
 
 /* ===== Fundo e corpo ===== */
@@ -103,6 +102,10 @@ footer {
   padding: 2rem 0;
 }
 
+
+p{
+  font-family:"Quicksand", sans-serif;
+}
 
 
 
