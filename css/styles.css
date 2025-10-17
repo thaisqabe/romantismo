@@ -73,7 +73,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
+  --bs-link-color: #686457;
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
@@ -83,6 +83,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.paleta{
+  color: #efeee9
+#f1eafc
+#fed6cc
+#c9e7ff
+#60b7c1
+#b1a4dc
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -10947,7 +10956,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/fundocerto.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
