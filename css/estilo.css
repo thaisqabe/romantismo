@@ -107,7 +107,14 @@ p{
   font-family:"Quicksand", sans-serif;
 }
 
+span{
+    transition: transform 0.3s ease-out; 
 
+}
+
+span:hover{
+  transform: scale(1.2);
+}
 
 
 
