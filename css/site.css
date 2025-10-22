@@ -1,3 +1,605 @@
+<<<<<<< HEAD
+/* ====== VARIÁVEIS DE COR (sua paleta) ====== */
+:root {
+    --bege: #efeee9;
+    --bege-escuro: #efe6d0;
+    /* topo/barra */
+    --lilas-claro: #f1eafc;
+    --rosa-pessego: #fed6cc;
+    --azul-suave: #c9e7ff;
+    --azul-principal: #60b7c1;
+    --lilas-escuro: #b1a4dc;
+    --texto: #241f1b;
+}
+
+/* ===== Base e fundo ===== */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--texto);
+
+    background-color: var(--bege);
+    background-image: url("../assets/img/fundo.png");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+
+p {
+    font-family: "Ruwudu", serif;
+}
+
+/* ===== Topbar ===== */
+.topbar {
+    font-size: 1.085rem;
+    color: #4b463f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    margin-top: 1rem;
+    padding-bottom: 0;
+    font-weight: bold;
+}
+
+/* ===== Header / Navbar ===== */
+.site-header {
+    background: transparent;
+    padding: 12px 0;
+    position: relative;
+}
+
+/* Strip behind navbar (bege claro) */
+.site-header .navbar {
+    background: #eee8d8;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+
+
+
+/* ===== Logo vazada sobre o menu ===== */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -94px;
+    /* quanto mais negativo, mais para cima a logo sobe */
+    z-index: 10;
+}
+
+.logo img {
+    height: 250px;
+    width: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+
+
+
+
+
+/* Menus (esquerda e direita) */
+.left-menu,
+.right-menu {
+    display: flex;
+    gap: 80px;
+    align-items: flex-end;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.left-menu li,
+.right-menu li {
+    margin: 0;
+}
+
+/* nav links: fonte decorativa */
+.nav-link {
+    font-family: "Macondo", cursive;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: var(--texto) !important;
+    padding: .2rem .4rem;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--lilas-escuro) !important;
+}
+
+/* active link: pêssego */
+.nav-link.active {
+    color: var(--rosa-pessego) !important;
+    font-weight: 700;
+    border-bottom: 3px solid var(--rosa-pessego);
+    padding-bottom: .45rem;
+}
+
+
+.menu {
+    height: 5rem;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+
+
+/* ===== Hero panel mint com cantos ornamentais ===== */
+.hero-section {
+
+    padding-top: 8% !important;
+    padding-bottom: 16px;
+}
+
+.hero-panel {
+    background: #cdd6ce;
+    /* #c9e7ff */
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-radius: 4px;
+    overflow: visible;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Cantos ornamentais posicionados por imagem PNG com transparência */
+.hero-panel .corner {
+    position: absolute;
+    width: 120px;
+    pointer-events: none;
+}
+
+.hero-panel .top-left {
+    top: -12px;
+    left: -4px;
+    transform: rotate(0);
+}
+
+.hero-panel .top-right {
+    top: -12px;
+    right: -4px;
+    transform: scaleX(-1);
+}
+
+.hero-panel .bottom-left {
+    bottom: -12px;
+    left: -4px;
+    transform: scaleY(-1);
+}
+
+.hero-panel .bottom-right {
+    bottom: -12px;
+    right: -4px;
+    transform: rotate(180deg);
+}
+
+/* Título com tipografia decorativa */
+.hero-title {
+    font-family: "Macondo", cursive;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: none;
+    color: var(--texto);
+}
+
+
+
+/* texto do painel */
+.hero-panel p {
+    color: #222;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.espaco {
+    padding-top: 4%;
+}
+
+.hero-sub {
+    font-family: "Ruwudu", serif;
+    color: #2b2b2b;
+    margin-bottom: 12px;
+    font-size: 1.55rem;
+    font-weight: normal;
+}
+
+
+.linha {
+    border-left-style: dashed;
+    border-color: #222;
+}
+
+/* ===== Seção SOBRE ===== */
+.sobre-section {
+    width: 100%;
+    background: #f9ebfa;
+    /* #f1eafc */
+    margin-top: 200px;
+    position: relative;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Caixa principal cobre a tela toda */
+.sobre-box {
+    width: 100%;
+    background: #f9ebfa;
+    position: relative;
+    text-align: center;
+}
+
+/* Título em formato de “aba” oval */
+.sobre-title {
+    font-family: "Macondo", cursive;
+    background: #f9ebfa;
+    color: var(--texto);
+    display: inline-block;
+    padding: 12px 32px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    z-index: 20;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Texto das colunas */
+.sobre-box .container {
+    padding-top: 80px;
+    /* dá espaço pro título oval */
+    padding-bottom: 40px;
+}
+
+.sobre-box .col-md-4 {
+    font-family: "Ruwudu", serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #2e2e2e;
+    padding: 0 40px 0 40px;
+    ;
+}
+
+
+.meio {
+    padding-top: 2% !important;
+}
+
+
+
+
+/* ===== LIVROS E REVISTAS ===== */
+.revistas-section {
+    padding: 80px 0 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.revistas-title {
+    font-family: "Macondo", cursive;
+    color: var(--texto);
+    font-size: 3.2rem;
+    background: var(--lilas-claro);
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.revista-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--lilas-claro);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.revista-item img {
+    width: 100%;
+    transition: transform 0.5s ease;
+    border-radius: 12px;
+}
+
+.revista-item:hover img {
+    transform: scale(1.05);
+}
+
+.revista-hover {
+    position: absolute;
+    inset: 0;
+    background: rgba(177, 164, 220, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+}
+
+.revista-item:hover .revista-hover {
+    opacity: 1;
+}
+
+.revista-hover i {
+    color: white;
+    transition: transform 0.4s ease;
+}
+
+.revista-item:hover .revista-hover i {
+    transform: scale(1.2);
+}
+
+.revista-caption {
+    text-align: center;
+    padding: 10px 8px 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.revista-caption h5 {
+    font-family: 'Cinzel Decorative', serif;
+    color: var(--texto);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.revista-caption p {
+    color: #4a4a4a;
+    font-size: 0.95rem;
+}
+
+/* ===== Ondas animadas (continuação do estilo anterior) ===== */
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: transparent;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.hero-waves {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-waves use {
+    fill: url(#waveGradient);
+    opacity: 0.9;
+    animation: moveWaves 8s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.wave2 use {
+    opacity: 0.6;
+    animation-delay: -2s;
+    animation-duration: 10s;
+}
+
+.wave3 use {
+    opacity: 0.4;
+    animation-delay: -4s;
+    animation-duration: 12s;
+}
+
+@keyframes moveWaves {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-25px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* ===== Footer (gradiente lilás -> azul) ===== */
+.site-footer {
+    background: #eee8d8;
+    color: BLACK;
+    font-family: "Playfair Display", serif;
+}
+
+/* ===== Mobile tweaks ===== */
+@media (max-width:992px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-sub {
+        font-size: 1.3rem;
+    }
+
+    .hero-panel p {
+        font-size: 1rem;
+    }
+
+
+
+
+    .hero-panel {
+        padding: 20px;
+    }
+
+    .sobre-box {
+        padding: 28px 16px;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    .sobre-section {
+        border-radius: 40px 40px 0 0;
+    }
+
+    .sobre-title {
+        font-size: 1.6rem;
+        padding: 8px 20px;
+        top: -18px;
+    }
+
+    .sobre-box .col-md-4 {
+        font-size: 1rem;
+    }
+
+    .topbar {
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        height: 180px;
+        transform: translateY(0);
+    }
+
+    .logo {
+        top: -60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .left-menu,
+    .right-menu {
+        gap: 30px;
+
+
+
+    }
+
+    .linha {
+        border: none;
+    }
+
+    .containermedia {
+        max-width: 600px;
+    }
+
+    .resp {
+        margin-right: 5%;
+    }
+
+    .resp2 {
+        margin-left: 5%;
+    }
+}
+
+
+@media (max-width: 588px) {
+    #menu-toggle:checked+.menu-icon+ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+        background-color: #94429ae1;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li label {
+        display: block;
+    }
+}
+
+/* .nav-link {
+    font-size: 0.95rem;
+} */
+/* ===== Opções estéticas extras (opcional) ===== */
+/* se quiser ativar ondas SVG: defina SVG no HTML e use este estilo */
+
+/* ===== Ondas animadas ===== */
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: transparent;
+    /* une perfeitamente com a seção acima */
+}
+
+.hero-waves {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-waves use {
+    fill: #eee8d8;
+    opacity: 0.9;
+    animation: moveWaves 8s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.wave2 use {
+    opacity: 0.6;
+    animation-delay: -2s;
+    animation-duration: 10s;
+}
+
+.wave3 use {
+    opacity: 0.4;
+    animation-delay: -4s;
+    animation-duration: 12s;
+}
+
+@keyframes moveWaves {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-25px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+=======
 /* ====== VARIÁVEIS DE COR (sua paleta) ====== */
 :root {
     --bege: #efeee9;
@@ -518,4 +1120,5 @@ p {
     100% {
         transform: translateX(0);
     }
+>>>>>>> a18d08ca33f306a4f0220f18fb7410231eb4178b
 }
