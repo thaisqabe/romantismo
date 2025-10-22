@@ -1,16 +1,19 @@
+
+  
 .containerLivros {
     display: flex;                
     justify-content: center;      
     align-items: center;         
     padding: 0;                 
     width: 100%;               
-    min-height: 60vh;         
+    min-height: 60vh;     
+        
 }
 
 .flipbook {
     width: 90vw;                  
     max-width: 1000px;            
-    height: 60vh;                 
+    height: 110vh;                 
 }
 
 .flipbook .hard {
@@ -38,7 +41,7 @@
 }
 
 .page img {
-    width: 70%;
+    width: 50%;
     object-fit: cover;
     margin: auto;
 }
@@ -47,3 +50,14 @@
     font-size: 14px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 1000px) {
+    .flipbook {
+      display: none !important;
+    }
+  
+    .pdfViewer {
+      display: block !important;
+    }
+  }
+  
