@@ -1,0 +1,334 @@
+body {
+    font-family: "Crimson Text", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3d3027;
+    background-color: #f5f1e8;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(139, 119, 101, 0.03) 2px,
+        rgba(139, 119, 101, 0.03) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(139, 119, 101, 0.03) 2px,
+        rgba(139, 119, 101, 0.03) 4px
+      ),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4c4b0' fill-opacity='0.15'%3E%3Cpath d='M30 30c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zm10-8c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .site-header {
+    background-color: #f5f1e8;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(139, 119, 101, 0.03) 2px,
+        rgba(139, 119, 101, 0.03) 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(139, 119, 101, 0.03) 2px,
+        rgba(139, 119, 101, 0.03) 4px
+      ),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4c4b0' fill-opacity='0.15'%3E%3Cpath d='M30 30c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zm10-8c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+    padding: 5rem 0 0 0;
+}
+  
+  .header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: #6b5d52;
+    font-style: italic;
+  }
+  
+  .header-text-left,
+  .header-text-right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+  }
+  
+  .nav-link {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    color: #3d3027;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #8b7765;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #8b7765;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  #resumo{
+    padding-top: 2%;
+  }
+  
+  /* Main Content */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  .hero-section {
+    padding-top: 3% !important;
+    padding-bottom: 16px;
+}
+  
+  .section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #3d3027;
+    margin: 1rem 0;
+  }
+  
+  .subtitle {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    color: #6b5d52;
+    margin-bottom: 2rem;
+  }
+  
+  /* Ornaments */
+  .ornament-top,
+  .ornament-bottom {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 0 0 ;
+  }
+  
+  .ornament-top svg,
+  .ornament-bottom svg {
+    width: 200px;
+    height: 30px;
+    color: #8b7765;
+  }
+
+#ficha-tecnica{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;    
+
+}
+
+.containerLivros {
+    display: flex;                
+    justify-content: center;      
+    align-items: center;         
+    padding: 3% 0 0 0;       
+    width: 100%;               
+    min-height: 60vh;     
+        
+}
+
+
+.hero-panel {
+    width: 70%;
+}
+
+strong{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+.content-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid #d4c4b0;
+    border-radius: 8px;
+    padding: 3rem;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .summary-box {
+    background-color: rgba(198, 210, 198, 0.15);
+  }
+  
+  .details-box {
+    background-color: rgba(234, 218, 218, 0.2);
+  }
+  
+  /* Corner Ornaments */
+  .corner-ornament {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: #8b7765;
+  }
+  
+  .corner-ornament.top-left {
+    top: -2px;
+    left: -2px;
+    border-width: 2px 0 0 2px;
+    border-radius: 8px 0 0 0;
+  }
+  
+  .corner-ornament.top-right {
+    top: -2px;
+    right: -2px;
+    border-width: 2px 2px 0 0;
+    border-radius: 0 8px 0 0;
+  }
+  
+  .corner-ornament.bottom-left {
+    bottom: -2px;
+    left: -2px;
+    border-width: 0 0 2px 2px;
+    border-radius: 0 0 0 8px;
+  }
+  
+  .corner-ornament.bottom-right {
+    bottom: -2px;
+    right: -2px;
+    border-width: 0 2px 2px 0;
+    border-radius: 0 0 8px 0;
+  }
+  
+  .corner-ornament::before {
+    content: "❦";
+    position: absolute;
+    font-size: 1rem;
+    color: #8b7765;
+  }
+  
+  .corner-ornament.top-left::before {
+    top: -8px;
+    left: -8px;
+  }
+  
+  .corner-ornament.top-right::before {
+    top: -8px;
+    right: -8px;
+  }
+  
+  .corner-ornament.bottom-left::before {
+    bottom: -8px;
+    left: -8px;
+  }
+  
+  .corner-ornament.bottom-right::before {
+    bottom: -8px;
+    right: -8px;
+  }
+  
+  /* Summary Content */
+  .summary-content p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+  }
+  
+  .lead-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    color: #6b5d52;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Book Details Grid */
+  .details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .detail-label {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #6b5d52;
+  }
+  
+  .detail-value {
+    font-size: 1.1rem;
+    color: #3d3027;
+  }
+
+.flipbook {
+    width: 55vw;
+    max-width: 1000px;            
+    height: 80vh;                 
+}
+
+.flipbook .hard {
+    background: #c0392b !important;
+    color: #fff;
+    font-weight: bold;
+    border: none; 
+}
+
+.flipbook .hard small {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.flipbook .page {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.page img {
+    width: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.flipbook .page small {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
