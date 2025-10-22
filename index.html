@@ -1,424 +1,301 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Livros
-    </title>
-    <!-- Favicon-->
-    <link rel="icon" class="logo" type="image/x-icon" href="assets/img/logo.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styless.css" rel="stylesheet" />
-    <link href="css/estilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Uma Volta ao Romantismo</title>
 
+    <!-- Bootstrap (grid apenas) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts: cabeçalhos ornamentais e texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (ícones se quiser usar) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#romantismo">Romantismo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#revistas">Revistas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">nada</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                </ul>
+<body>
+
+    <!-- Fundo principal: papel de parede floral definido no CSS -->
+    <!-- Top bar pequeno com textos laterais -->
+    <div class="topbar text-center">
+        <div class="container d-flex justify-content-between align-items-center small">
+            <div>
+                <p>Projeto da 4ª Feira Tecnológica da Etec MCM elaborado pelo 2ºano C.</p>
+            </div>
+            <div>
+                <p>Revistas elaboradas pelos 2º anos na disciplina de português.</p>
             </div>
         </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Bem-vindo ao site!</div>
-            <div class="masthead-heading text-uppercase">revistas do romantismo</div>
-            <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> -->
-        </div>
+    </div>
+
+    <!-- NAVBAR com logo central e itens distribuídos -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xl menu">
+            <div class="container d-flex justify-content-between align-items-end">
+                <!-- Menu esquerda -->
+                <ul class="nav left-menu">
+                    <li><a class="nav-link" href="#">Romantismo</a></li>
+                    <li><a class="nav-link" href="#">Sobre</a></li>
+                </ul>
+
+                <!-- Logo central (coloque sua imagem logo.png) -->
+                <a class="logo" href="#">
+                    <img src="assets/img/logo.png" alt="Logo" />
+                </a>
+
+                <!-- Menu direita -->
+                <ul class="nav right-menu">
+                    <li><a class="nav-link" href="#">Revistas</a></li>
+                    <li><a class="nav-link" href="#">Autores</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
 
-    <div class="hero-waves-container">
+    <!-- Painel principal (mint box com cantos ornamentais) -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="hero-panel mx-auto p-4 p-md-5">
+                <div class="row g-4">
+                    <div class="col-md-6 ">
+                        <h1 class="hero-title">O Romantismo no Brasil</h1>
+                        <p class="hero-sub">-Movimento artístico e cultural que privilegia as emoções, a
+                            subjetividade e o individualismo.</p>
+
+                        <p class="lead espaco">O romantismo surgiu na Europa no século XVIII no contexto da revolução
+                            industrial
+                            e do iluminismo, movimento intelectual e filosófico baseado na razão. Ele durou até meados
+                            do século
+                            XIX, quando começa o realismo.
+                            No Brasil, o movimento romântico começa em meados do século XIX, anos depois
+                            da independência do país (1822) com a publicação da obra "Suspiros poéticos e saudades", de
+                            Gonçalves
+                            de Magalhães, em 1836.</p>
+                    </div>
+
+                    <div class="col-md-6 linha">
+                        <p>A literatura romântica brasileira se dividiu em três fases. A primeira, nacionalista,
+                            destacava o índio como herói e símbolo da nação. A segunda, chamada ultrarromântica,
+                            mergulhava no sentimentalismo, na saudade e no amor idealizado. Já a terceira, condoreira,
+                            tinha um tom social e político, defendendo liberdade e justiça.</p>
+
+                        <p>
+                            Características: Criação de um herói nacional, Fuga da realidade, Estrutura do texto em
+                            prosa, Exaltação do nacionalismo, da natureza e da pátria, Sentimentalismo e
+                            supervalorização das emoções pessoais, Subjetivismo e egocentrismo, Uso de versos livres e
+                            versos brancos.
+
+                        </p>
+
+                        <p>Por volta de 1880, o Romantismo começou a dar lugar ao Realismo. Mesmo assim, sua influência
+                            permanece viva: o Romantismo ensinou o Brasil a sentir, sonhar e reconhecer beleza em sua
+                            própria cultura.</p>
+                    </div>
+                </div>
+                <!-- cantos ornamentais (use imagens PNG com transparência) -->
+                <img class="corner top-left" src="assets/img/13.png" alt="">
+                <img class="corner top-right" src="assets/img/13.png" alt="">
+                <img class="corner bottom-left" src="assets/img/13.png" alt="">
+                <img class="corner bottom-right" src="assets/img/13.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seção SOBRE com faixa lilás arredondada no topo -->
+    <section class="sobre-section">
+        <div class=" text-center">
+            <h2 class="sobre-title">Sobre Nosso Projeto</h2>
+
+            <div class="container py-5 sobre-box">
+                <div class="row text-dark">
+                    <div class="col-md-4">
+                        Nosso projeto tem como objetivo unir tecnologia e literatura, por meio da criação de um site e
+                        de revistas dedicadas às principais obras do Romantismo brasileiro. Desenvolvemos essa proposta
+                        em parceria entre as disciplinas de Língua Portuguesa e IW-1 (Interfaces Web), sob orientação
+                        dos professores Amanda Chagas e Anderson Vanin.
+                    </div>
+                    <div class="col-md-4 meio">
+                        Unimos os conhecimentos do nosso ensino médio com habilitação profissional em Tecnologia para
+                        Internet à área de Língua Portuguesa. Além disso, nosso trabalho está alinhado à ODS 4 (Educação
+                        de Qualidade), reforçando a importância de uma educação mais acessível, dinâmica e
+                        significativa.
+                    </div>
+                    <div class="col-md-4">
+                        Durante o desenvolvimento do projeto, nossa professora Amanda Chagas nos apresentou as obras do
+                        Romantismo, destacando sua presença em vestibulares como a Fuvest e o Enem. Com isso, obtivemos
+                        um grande aprendizado literário, ampliação de repertório e práticas tecnológicas e artísticas.
+                        Esperamos que nossa sala tenha conseguido transmitir todo esse conhecimento e dedicação a vocês.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LIVROS E REVISTAS -->
+<section class="revistas-section" id="revistas">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="revistas-title">Livros e Revistas</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover">
+              <i class="fas fa-plus fa-2x"></i>
+            </div>
+            <img src="assets/img/luciola.png" class="img-fluid" alt="Lucíola" />
+          </a>
+          <div class="revista-caption">
+            <h5>Lucíola</h5>
+            <p>José de Alencar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/senhora.png" class="img-fluid" alt="Senhora" />
+          </a>
+          <div class="revista-caption">
+            <h5>Senhora</h5>
+            <p>José de Alencar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/diva.png" class="img-fluid" alt="Diva" />
+          </a>
+          <div class="revista-caption">
+            <h5>Diva</h5>
+            <p>José de Alencar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/moreninha.png" class="img-fluid" alt="A Moreninha" />
+          </a>
+          <div class="revista-caption">
+            <h5>A Moreninha</h5>
+            <p>Joaquim Manuel de Macedo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/escrava.png" class="img-fluid" alt="A Escrava Isaura" />
+          </a>
+          <div class="revista-caption">
+            <h5>A Escrava Isaura</h5>
+            <p>Bernardo Guimarães</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/memorias.png" class="img-fluid" alt="Memórias de um Sargento de Milícias" />
+          </a>
+          <div class="revista-caption">
+            <h5>Memórias de um Sargento de Milícias</h5>
+            <p>Manuel Antônio de Almeida</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/iracema.png" class="img-fluid" alt="Iracema" />
+          </a>
+          <div class="revista-caption">
+            <h5>Iracema</h5>
+            <p>José de Alencar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="revista-item">
+          <a href="#">
+            <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
+            <img src="assets/img/guarani.png" class="img-fluid" alt="O Guarani" />
+          </a>
+          <div class="revista-caption">
+            <h5>O Guarani</h5>
+            <p>José de Alencar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- WAVES (opcional) -->
+    <!-- Ondas decorativas -->
+    <div class="wave-container">
         <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
             <defs>
+                <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#b1a4dc" />
+                    <stop offset="100%" stop-color="#60b7c1" />
+                </linearGradient>
                 <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
             </defs>
             <g class="wave1">
-                <use href="#wave-path" x="50" y="3" />
+                <use xlink:href="#wave-path" x="50" y="3"></use>
             </g>
             <g class="wave2">
-                <use href="#wave-path" x="50" y="0" />
+                <use xlink:href="#wave-path" x="50" y="0"></use>
             </g>
             <g class="wave3">
-                <use href="#wave-path" x="50" y="9" />
+                <use xlink:href="#wave-path" x="50" y="9"></use>
             </g>
         </svg>
     </div>
 
-
-    <!-- Services-->
-    <section class="page-section" id="romantismo">
+    <!-- Footer -->
+    <footer class="site-footer text-center py-4">
         <div class="container">
-
-
-
-
-
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Romantismo</h2>
-                <h3 class="section-subheading text-muted">Movimento artístico e cultural que privilegia as emoções, a
-                    subjetividade e o individualismo.</h3>
-                <p class="text-muted">O romantismo surgiu na Europa no século XVIII no contexto da revolução industrial
-                    e do iluminismo, movimento intelectual e filosófico baseado na razão. Ele durou até meados do século
-                    XIX, quando começa o realismo.</p>
-                <p class="text-muted mb-5">No Brasil, o movimento romântico começa em meados do século XIX, anos depois
-                    da independência do país (1822) com a publicação da obra Suspiros poéticos e saudades, de Gonçalves
-                    de Magalhães, em 1836.</p>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-user fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Criação de um herói nacional</h4>
-                    <p class="text-muted">Após a independência, usou o indígena, que já vivia no território, como representante da brasilidade, em contraposição ao colonizador europeu e ao escravo africano. </p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-book-bookmark fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Oposição ao modelo clássico</h4>
-                    <p class="text-muted">A arte, que antes era de caráter nobre e erudita, passa a valorizar o folclórico e o nacional. Ela extrapola as barreiras impostas pela Corte e começa a ganhar a atenção do povo.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-heart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Sentimentalismo</h4>
-                    <p class="text-muted">A supervalorização das emoções pessoais, o subjetivismo e egocentrismo. É dessa maneira que os poetas se colocavam como o centro do universo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="revistas">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase mb-5">Livros e revistas</h2>
-            </div>
-            <div class="row">
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/luciola.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Lucíola</div>
-                            <div class="portfolio-caption-subheading text-muted">José de Alencar</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 2-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/senhora.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Senhora</div>
-                            <div class="portfolio-caption-subheading text-muted">José de Alencar</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 3-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/diva.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Diva</div>
-                            <div class="portfolio-caption-subheading text-muted">José de Alencar</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 4-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/moreninha.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">A Moreninha</div>
-                            <div class="portfolio-caption-subheading text-muted">Joaquim Manuel de Macedo</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 5-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/escrava.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">A Escrava Isaura</div>
-                            <div class="portfolio-caption-subheading text-muted">Bernanda Guimarães</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 6-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/memorias.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption memorias">
-                            <div class="portfolio-caption-heading memoriasp">Memórias de um Sargento de Milícias</div>
-                            <div class="portfolio-caption-subheading text-muted">Manuel Antônio de Almeida</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 6-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/iracema.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Iracema</div>
-                            <div class="portfolio-caption-subheading text-muted">José de Alencar</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-6 col-lg-3">
-                    <!-- Portfolio item 6-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="#">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/guarani.png" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">O Guarani</div>
-                            <div class="portfolio-caption-subheading text-muted">José de Alencar</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2009-2011</h4>
-                            <h4 class="subheading">Our Humble Beginnings</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Be Part
-                            <br />
-                            Of Our
-                            <br />
-                            Story!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                        <h4>Parveen Anand</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>Diana Petersen</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="align-items-center">
-                <div class="text-center text-lg-start">Produzido por 2C</div>
-                <!-- <div class="col-lg-4 my-3 my-lg-0">
-
-                </div> -->
-                <!-- <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div> -->
-            </div>
+            <p>Produzido por 2C</p>
         </div>
     </footer>
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
