@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Uma Volta ao Romantismo</title>
+
+    <!-- Bootstrap (grid apenas) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts: cabeçalhos ornamentais e texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (ícones se quiser usar) -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/livros.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md menu">
+        <div class="container position-relative">
+          <!-- Botão hambúrguer (visível apenas em telas pequenas) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarRomantismo"
+            aria-controls="navbarRomantismo"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Logo central -->
+          <a class="logo" href="#">
+            <img src="../assets/img/logo.png" alt="Logo" />
+          </a>
+
+          <!-- Itens do menu -->
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarRomantismo"
+          >
+            <ul class="navbar-nav left-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Romantismo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav right-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#ficha-tecnica">Ficha Técnica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#revistas">Revistas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Painel principal (mint box com cantos ornamentais) -->
+    <section id="resumo" class="book-summary">
+      <div class="ornament-top">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10,15 Q30,5 50,15 T90,15 M110,15 Q130,5 150,15 T190,15"
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+          />
+          <circle cx="100" cy="15" r="4" fill="currentColor" />
+        </svg>
+      </div>
+
+      <h1 class="section-title">Iracema</h1>
+      <p class="subtitle">O mito de amor que fundou o Brasil</p>
+
+      <section class="hero-section" id="sobre">
+        <div class="container">
+          <div class="hero-panel mx-auto p-4 p-md-5">
+            <div class="row g-4">
+              <div class="col-md-12">
+                <h1 style="text-align: center; font-weight: bold">Sumário</h1>
+                <p class="lead espaco">
+                  <strong>I</strong>racema, a “virgem dos lábios de mel”,
+                  apaixona-se por Martim, um português inimigo de sua tribo. O
+                  amor entre eles representa a fusão entre o índio e o europeu,
+                  origem simbólica do povo brasileiro.
+                </p>
+              </div>
+            </div>
+            <!-- cantos ornamentais (use imagens PNG com transparência) -->
+            <img class="corner top-left" src="../assets/img/13.png" alt="" />
+            <img class="corner top-right" src="../assets/img/13.png" alt="" />
+            <img class="corner bottom-left" src="../assets/img/13.png" alt="" />
+            <img
+              class="corner bottom-right"
+              src="../assets/img/13.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="ornament-bottom">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10,15 Q30,25 50,15 T90,15 M110,15 Q130,25 150,15 T190,15"
+            stroke="currentColor"
+            fill="none"
+            stroke-width="1.5"
+          />
+          <circle cx="100" cy="15" r="4" fill="currentColor" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ficha-tecnica -->
+    <section id="ficha-tecnica" class="book-details">
+      <h2 class="section-title">Ficha Técnica</h2>
+
+      <div class="content-box details-box">
+        <div class="details-grid">
+          <div class="detail-item">
+            <span class="detail-label">Autor:</span>
+            <span class="detail-value">José de Alencar</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Ano de Publicação:</span>
+            <span class="detail-value">1865</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Gênero:</span>
+            <span class="detail-value">Romance lírico e simbólico</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Movimento Literário:</span>
+            <span class="detail-value">Romantismo indianista</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Editora Original:</span>
+            <span class="detail-value">Typographia de José Olympio de Oliveira</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Páginas:</span>
+            <span class="detail-value">Aproximadamente 160 páginas</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Idioma:</span>
+            <span class="detail-value">Português</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Contexto:</span>
+            <span class="detail-value"
+              > Inspirado na fundação do Ceará, reflete o ideal nacionalista e o mito de origem do Brasil.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVISTAS -->
+    <section class="page-section" id="revistas">
+      <div class="container">
+        <div class="text-center">
+          <div class="ornament-top">
+            <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10,15 Q30,5 50,15 T90,15 M110,15 Q130,5 150,15 T190,15"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="1.5"
+              />
+              <circle cx="100" cy="15" r="4" fill="currentColor" />
+            </svg>
+          </div>
+          <h2 class="section-title">Leitura Online</h2>
+        </div>
+
+        <!-- REVISTA 1 -->
+        <div class="containerLivros">
+          <h3>Iracema – Volume 2C</h3>
+          <div class="flipbook" id="flipbook-luciola"></div>
+          <!-- passar ID deferentes -->
+        </div>
+
+        <!-- REVISTA 2 -->
+        <div class="containerLivros">
+          <h3>Iracema – Volume 2A</h3>
+          <div class="flipbook" id="flipbook-senhora"></div>
+        </div>
+
+        <!-- MODO MOBILE -->
+        <div class="revistas-mobile">
+          <div class="revista-card">
+            <img
+              src="../RevistasAmanda/luciola/Luciola-2C/img-1.jpg"
+              alt="Capa Lúciola 2C"
+            />
+            <h4>Lúciola – Volume 2C</h4>
+            <a
+              href="../pdf/luciola/luciola-2C.pdf"
+              target="_blank"
+              class="btn-ler"
+              >Ler PDF</a
+            >
+          </div>
+
+          <div class="revista-card">
+            <img
+              src="../RevistasAmanda/luciola/Luciola-2A/img-1.jpg"
+              alt="Capa Lúciola 2A"
+            />
+            <h4>Lúciola – Volume 2A</h4>
+            <a
+              href="../pdf/luciola/luciola-2C.pdf"
+              target="_blank"
+              class="btn-ler"
+              >Ler PDF</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function carregarRevista(id, pasta, totalImgs) {
+        const flipbook = document.getElementById(id);
+        if (!flipbook) {
+          console.error("Elemento não encontrado:", id); // se nao acher dnovo
+          return;
+        }
+
+        // colocar as páginas da revista
+        for (let i = 1; i <= totalImgs; i++) {
+          flipbook.innerHTML += `
+        <div class="page">
+          <img src="../${pasta}img-${i}.jpg" alt="Página ${i}" />
+        </div>
+      `;
+        }
+
+        // efeito flipbook depois inserir as páginas
+        setTimeout(() => {
+          $(`#${id}`).turn({});
+        }, 300); //  atraso para garantir ja tem as paginas
+      }
+
+      // Carrega as revistas
+      carregarRevista(
+        "flipbook-luciola",
+        "RevistasAmanda/luciola/Luciola-2C/",
+        28
+      ); //! passar o id que esta no html - o caminho da revista e o total de img
+      carregarRevista(
+        "flipbook-senhora",
+        "RevistasAmanda/luciola/Luciola-2A/",
+        22
+      );
+    </script>
+
+    <!-- Ondas decorativas -->
+    <div class="wave-container">
+      <svg
+        class="hero-waves"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#b1a4dc" />
+            <stop offset="100%" stop-color="#60b7c1" />
+          </linearGradient>
+          <path
+            id="wave-path"
+            d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
+          ></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer text-center py-4">
+      <div class="container">
+        <p>Produzido por 2C</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/paginacao/jquery.js"></script>
+    <script src="../js/paginacao/turn.js"></script>
+  </body>
+</html>
