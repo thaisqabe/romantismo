@@ -18,10 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome (ícones se quiser usar) -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS personalizado -->
   <link rel="stylesheet" href="css/site.css">
 
 
@@ -30,7 +28,6 @@
 
 <body>
 
-  <!-- Fundo principal: papel de parede floral definido no CSS -->
   <!-- Top bar pequeno com textos laterais -->
   <div class="topbar text-center">
     <div class="container d-flex justify-content-between align-items-center small">
@@ -54,20 +51,20 @@
         </button>
 
         <!-- Logo central -->
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <img src="assets/img/logo.png" alt="Logo" />
         </a>
 
         <!-- Itens do menu -->
         <div class="collapse navbar-collapse justify-content-between" id="navbarRomantismo">
           <ul class="navbar-nav left-menu">
-            <li class="nav-item"><a class="nav-link" href="#">Romantismo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#romantismo">Romantismo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           </ul>
 
           <ul class="navbar-nav right-menu">
-            <li class="nav-item"><a class="nav-link" href="#">Revistas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Autores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#revistas">Revistas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#autores">Autores</a></li>
           </ul>
         </div>
 
@@ -75,8 +72,8 @@
     </nav>
   </header>
 
-  <!-- Painel principal (mint box com cantos ornamentais) -->
-  <section class="hero-section">
+  <!-- Painel principal-->
+  <section class="hero-section" id="romantismo">
     <div class="container">
       <div class="hero-panel mx-auto p-4 p-md-5">
         <div class="row g-4">
@@ -115,7 +112,7 @@
               própria cultura.</p>
           </div>
         </div>
-        <!-- cantos ornamentais (use imagens PNG com transparência) -->
+        <!-- cantos ornamentais -->
         <img class="corner top-left" src="assets/img/13.png" alt="">
         <img class="corner top-right" src="assets/img/13.png" alt="">
         <img class="corner bottom-left" src="assets/img/13.png" alt="">
@@ -130,8 +127,8 @@
   </div>
 
 
-  <!-- Seção SOBRE com faixa lilás arredondada no topo -->
-  <section class="sobre-section">
+  <!-- Seção SOBRE  -->
+  <section class="sobre-section" id="sobre">
     <div class=" text-center">
       <h2 class="sobre-title">Sobre Nosso Projeto</h2>
 
@@ -162,7 +159,7 @@
   </section>
 
   <!-- Ornamento central desenhado -->
-  <div class="central-ornament text-center mb-4">
+  <div class="central-ornament text-center mb-4" id="revistas">
     <img src="assets/img/ornamento.png" alt="ornamento">
   </div>
 
@@ -177,148 +174,299 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/luciola.html">
-              <div class="revista-hover">
-                <i class="fas fa-plus fa-2x"></i>
-              </div>
+
               <div class="revista-ornamento">
                 <img src="assets/img/luciola.png" alt="Lucíola" class="livro-img">
               </div>
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>Lucíola</h5>
-              <p>José de Alencar</p>
-            </div>
+          <div class="revista-caption">
+            <h5>Lucíola</h5>
+            <p>José de Alencar</p>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/senhora.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/senhora.png" class="img-fluid" alt="Senhora" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>Senhora</h5>
-              <p>José de Alencar</p>
-            </div>
+          <div class="revista-caption">
+            <h5>Senhora</h5>
+            <p>José de Alencar</p>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/diva.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/diva.png" class="img-fluid" alt="Diva" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>Diva</h5>
-              <p>José de Alencar</p>
-            </div>
-
+          <div class="revista-caption">
+            <h5>Diva</h5>
+            <p>José de Alencar</p>
           </div>
+
+        </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/moreninha.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/moreninha.png" class="img-fluid" alt="A Moreninha" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>A Moreninha</h5>
-              <p>Joaquim Manuel de Macedo</p>
-            </div>
-
+          <div class="revista-caption">
+            <h5>A Moreninha</h5>
+            <p>Joaquim Manuel de Macedo</p>
           </div>
+
+        </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="/pages/isaura.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/escrava.png" class="img-fluid" alt="A Escrava Isaura" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>A Escrava Isaura</h5>
-              <p>Bernardo Guimarães</p>
-            </div>
+          <div class="revista-caption">
+            <h5>A Escrava Isaura</h5>
+            <p>Bernardo Guimarães</p>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="/pages/memorias.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/memorias.png" class="img-fluid" alt="Memórias de um Sargento de Milícias" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>Memórias de um Sargento de Milícias</h5>
-              <p>Manuel Antônio de Almeida</p>
-            </div>
+          <div class="revista-caption">
+            <h5>Memórias de um Sargento de Milícias</h5>
+            <p>Manuel Antônio de Almeida</p>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/iracema.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/iracema.png" class="img-fluid" alt="Iracema" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>Iracema</h5>
-              <p>José de Alencar</p>
-            </div>
+          <div class="revista-caption">
+            <h5>Iracema</h5>
+            <p>José de Alencar</p>
+          </div>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="revista-item">
             <a href="./pages/guarani.html">
-              <div class="revista-hover"><i class="fas fa-plus fa-2x"></i></div>
               <img src="assets/img/guarani.png" class="img-fluid" alt="O Guarani" />
             </a>
           </div>
-            <div class="revista-caption">
-              <h5>O Guarani</h5>
-              <p>José de Alencar</p>
-            </div>
-          
+          <div class="revista-caption">
+            <h5>O Guarani</h5>
+            <p>José de Alencar</p>
+          </div>
+
         </div>
+
+      </div>
+      <img class="corner top-left" src="assets/img/ornamentorev.png" alt="">
+      <img class="corner top-right" src="assets/img/ornamentorev.png" alt="">
+      <img class="corner bottom-left" src="assets/img/ornamentorev.png" alt="">
+      <img class="corner bottom-right" src="assets/img/ornamentorev.png" alt="">
+    </div>
+  </section>
+
+
+  <!-- Ornamento central desenhado -->
+  <div class="central-ornament text-center mb-4" id="revistas">
+    <img src="assets/img/ornamento.png" alt="ornamento">
+  </div>
+
+  <!-- AUTORES -->
+  <section id="autores" class="autores-romanticos py-5">
+    <div class="container text-center">
+      <h2 class="titulo-autores mb-5">Autores do Romantismo</h2>
+
+      <div id="carouselAutores" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+        data-bs-pause="hover">
+        <div class="carousel-inner">
+
+          <!-- Autor 1 -->
+          <div class="carousel-item active">
+            <div class="autor-card mx-auto">
+              <div class="autor-foto">
+                <img src="assets/img/jose.png" alt="José de Alencar">
+              </div>
+              <h3>José de Alencar</h3>
+              <p>Um dos maiores nomes do romantismo brasileiro, autor de <em>Iracema, O Guarani, Senhora, Diva e
+                  Lucíola</em>.</p>
+            </div>
+          </div>
+
+          <!-- Autor 2 -->
+          <div class="carousel-item">
+            <div class="autor-card mx-auto">
+              <div class="autor-foto">
+                <img src="assets/img/joaquim.png" alt="Joaquim Manuel de Macedo">
+              </div>
+              <h3>Joaquim Manuel de Macedo</h3>
+              <p>É considerado um dos fundadores do romance e do teatro no Brasil, escreveu <em>A Moreninha</em>.</p>
+            </div>
+          </div>
+
+          <!-- Autor 3 -->
+          <div class="carousel-item">
+            <div class="autor-card mx-auto">
+              <div class="autor-foto">
+                <img src="assets/img/manuel.png" alt="Manuel Antônio de Almeida">
+              </div>
+              <h3>Manuel Antônio de Almeida</h3>
+              <p>Autor de <em>Memórias de um Sargento de Milícias</em>, foi um importante escritor da primeira geração
+                romântica.</p>
+            </div>
+          </div>
+
+          <!-- Autor 4 -->
+          <div class="carousel-item">
+            <div class="autor-card mx-auto">
+              <div class="autor-foto">
+                <img src="assets/img/bernardo.png" alt="Bernardo Guimarães">
+              </div>
+              <h3>Bernardo Guimarães</h3>
+              <p>Autor de <em>A Escrava Isaura</em>, defendeu a liberdade e criticou as injustiças da sociedade.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutores" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutores" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>
 
-    <!-- Ondas decorativas -->
-    <div class="wave-container">
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#b1a4dc" />
-            <stop offset="100%" stop-color="#60b7c1" />
-          </linearGradient>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-      </svg>
-    </div>
+  <!-- Ornamento central desenhado -->
+  <div class="central-ornament text-center mb-4" id="revistas">
+    <img src="assets/img/ornamento.png" alt="ornamento">
+  </div>
 
-    <!-- Footer -->
-    <footer class="site-footer text-center py-4">
-      <div class="container">
-        <p>Produzido por 2C</p>
+
+  <!-- GRUPOS -->
+  <section id="grupos" class="grupos-romanticos py-5">
+    <div class="container text-center">
+      <h2 class="titulo-grupos mb-5">Grupos</h2>
+
+      <div class="row justify-content-center g-4">
+
+        <!-- Grupo 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="grupo-card">
+
+            <h3>Design e Identidade Visual</h3>
+            <ul>
+              <li>Katarina Vitória da Silva</li>
+              <li>Letícia Vasconcelos da Silva</li>
+              <li>Mayara de Oliveira Sant'Anna</li>
+              <li>Nicole Modesto Moura</li>
+              <li>Rihanna Carolina Gonçalves Arantes</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Grupo 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="grupo-card">
+
+            <h3>Estrutura de código</h3>
+            <ul>
+              <li>João Vinícius Costa</li>
+              <li>Lorenzo Müler Cardoso</li>
+              <li>Tamires Anastacio de Freitas</li>
+              <li>Nicole Modesto Moura</li>
+              <li>Thiago da Silva Santos</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Grupo 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="grupo-card">
+
+            <h3>Desenvolvedores</h3>
+            <ul>
+              <li>João Pedro de Andrade Ferreira</li>
+              <li>Lorena da Silva Rodrigues</li>
+              <li>Paola Onório Zaratini</li>
+              <li>Sophia Gonçalves Morais</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Grupo 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="grupo-card">
+
+            <h3>Gestores de Conteúdo</h3>
+            <ul>
+              <li>Kaio de Lima Meronho</li>
+              <li>Pedro Henrique Rillo de Cravalho</li>
+              <li>Thaís Quinelato Abe</li>
+              <li>Vitor da Silva Lopes</li>
+              <li>Vitor Gonçalves Barros</li>
+
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Ondas decorativas -->
+  <div class="wave-container">
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#b1a4dc" />
+          <stop offset="100%" stop-color="#60b7c1" />
+        </linearGradient>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9"></use>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer text-center py-4">
+    <div class="container">
+      <p>Produzido por 2C</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
