@@ -214,27 +214,31 @@
 
         <!-- REVISTA 1 -->
         <div class="containerLivros">
-          <h3>A Escrava Isaura – Volume 2C</h3>
-          <div class="flipbook" id="flipbook-luciola"></div>
+          <h3>A Escrava Isaura – Volume 2A</h3>
+          <div class="flipbook" id="flipbook-isauraA"></div>
           <!-- passar ID deferentes -->
         </div>
 
         <!-- REVISTA 2 -->
         <div class="containerLivros">
-          <h3>A Escrava Isaura – Volume 2A</h3>
-          <div class="flipbook" id="flipbook-A Escrava Isaura"></div>
+          <h3>A Escrava Isaura – Volume 2B</h3>
+          <div class="flipbook" id="flipbook-isauraB"></div>
+        </div>
+
+        <div class="containerLivros">
+          <h3>A Escrava Isaura – Volume 2C</h3>
+          <div class="flipbook" id="flipbook-isauraC"></div>
         </div>
 
         <!-- MODO MOBILE -->
         <div class="revistas-mobile">
           <div class="revista-card">
             <img
-              src="../RevistasAmanda/luciola/Luciola-2C/img-1.jpg"
-              alt="Capa Lúciola 2C"
+              src="../RevistasAmanda/isaura/Escrava-Isaura-2A/img-1.jpg"
             />
-            <h4>Lúciola – Volume 2C</h4>
+            <h4>A Escrava Isaura – Volume 2A</h4>
             <a
-              href="../pdf/luciola/luciola-2C.pdf"
+              href="../pdf/isaura/Isaura-2A.pdf"
               target="_blank"
               class="btn-ler"
               >Ler PDF</a
@@ -243,12 +247,23 @@
 
           <div class="revista-card">
             <img
-              src="../RevistasAmanda/luciola/Luciola-2A/img-1.jpg"
-              alt="Capa Lúciola 2A"
+              src="../RevistasAmanda/isaura/Escrava-Isaura-2B/img-1.jpg"
             />
-            <h4>Lúciola – Volume 2A</h4>
+            <h4>A Escrava Isaura – Volume 2B</h4>
             <a
-              href="../pdf/luciola/luciola-2C.pdf"
+              href="../pdf/isaura/Isaura-2B.pdf"
+              target="_blank"
+              class="btn-ler"
+              >Ler PDF</a
+            >
+          </div>
+          <div class="revista-card">
+            <img
+              src="../RevistasAmanda/isaura/Escrava-Isaura-2C/img-1.jpg"
+            />
+            <h4>A Escrava Isaura – Volume 2C</h4>
+            <a
+              href="../pdf/isaura/Isaura-2C.pdf"
               target="_blank"
               class="btn-ler"
               >Ler PDF</a
@@ -283,14 +298,19 @@
 
       // Carrega as revistas
       carregarRevista(
-        "flipbook-luciola",
-        "RevistasAmanda/luciola/Luciola-2C/",
-        28
+        "flipbook-isauraA",
+        "RevistasAmanda/isaura/Escrava-Isaura-2A/",
+        19
       ); //! passar o id que esta no html - o caminho da revista e o total de img
       carregarRevista(
-        "flipbook-A Escrava Isaura",
-        "RevistasAmanda/luciola/Luciola-2A/",
-        22
+        "flipbook-isauraB",
+        "RevistasAmanda/isaura/Escrava-Isaura-2B/",
+        24
+      );
+      carregarRevista(
+        "flipbook-isauraC",
+        "RevistasAmanda/isaura/Escrava-Isaura-2C/",
+        32
       );
     </script>
 
