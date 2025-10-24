@@ -211,27 +211,31 @@
 
         <!-- REVISTA 1 -->
         <div class="containerLivros">
-          <h3>Iracema – Volume 2C</h3>
-          <div class="flipbook" id="flipbook-luciola"></div>
+          <h3>Iracema – Volume 2A</h3>
+          <div class="flipbook" id="flipbook-IracemaA"></div>
           <!-- passar ID deferentes -->
         </div>
 
         <!-- REVISTA 2 -->
         <div class="containerLivros">
-          <h3>Iracema – Volume 2A</h3>
-          <div class="flipbook" id="flipbook-senhora"></div>
+          <h3>Iracema – Volume 2B</h3>
+          <div class="flipbook" id="flipbook-IracemaB"></div>
+        </div>
+
+         <div class="containerLivros">
+          <h3>Iracema – Volume 2C</h3>
+          <div class="flipbook" id="flipbook-IracemaC"></div>
         </div>
 
         <!-- MODO MOBILE -->
         <div class="revistas-mobile">
           <div class="revista-card">
             <img
-              src="../RevistasAmanda/luciola/Luciola-2C/img-1.jpg"
-              alt="Capa Lúciola 2C"
+              src="../RevistasAmanda/Iracema/Iracema-2A/img-1.jpg"
             />
-            <h4>Lúciola – Volume 2C</h4>
+            <h4>Iracema – Volume 2A</h4>
             <a
-              href="../pdf/luciola/luciola-2C.pdf"
+              href="../pdf/iracema/Iracema-2A.pdf"
               target="_blank"
               class="btn-ler"
               >Ler PDF</a
@@ -240,12 +244,24 @@
 
           <div class="revista-card">
             <img
-              src="../RevistasAmanda/luciola/Luciola-2A/img-1.jpg"
-              alt="Capa Lúciola 2A"
+              src="../RevistasAmanda/Iracema/Iracema-2B/img-1.jpg"
             />
-            <h4>Lúciola – Volume 2A</h4>
+            <h4>Iracema – Volume 2B</h4>
             <a
-              href="../pdf/luciola/luciola-2C.pdf"
+              href="../pdf/iracema/Iracema-2B.pdf"
+              target="_blank"
+              class="btn-ler"
+              >Ler PDF</a
+            >
+          </div>
+
+           <div class="revista-card">
+            <img
+              src="../RevistasAmanda/Iracema/Iracema-2C/img-1.jpg"
+            />
+            <h4>Iracema – Volume 2C</h4>
+            <a
+              href="../pdf/iracema/Iracema-2C.pdf"
               target="_blank"
               class="btn-ler"
               >Ler PDF</a
@@ -280,14 +296,19 @@
 
       // Carrega as revistas
       carregarRevista(
-        "flipbook-luciola",
-        "RevistasAmanda/luciola/Luciola-2C/",
-        28
+        "flipbook-IracemaA",
+        "RevistasAmanda/Iracema/Iracema-2A/",
+        36
       ); //! passar o id que esta no html - o caminho da revista e o total de img
       carregarRevista(
-        "flipbook-senhora",
-        "RevistasAmanda/luciola/Luciola-2A/",
-        22
+        "flipbook-IracemaB",
+        "RevistasAmanda/Iracema/Iracema-2C/",
+        24
+      );
+      carregarRevista(
+        "flipbook-IracemaC",
+        "RevistasAmanda/Iracema/Iracema-2C/",
+        24
       );
     </script>
 
