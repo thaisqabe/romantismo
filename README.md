@@ -1,4 +1,4 @@
-# 🌸 Projeto Livrosite
+# 🌸 Uma volta ao romantismo
 
 Um site inspirado no **Romantismo literário brasileiro**, criado para apresentar revistas digitais baseadas em obras clássicas e seus autores, com um design **vintage e poético**, remetendo à estética das publicações do século.
 
@@ -40,5 +40,6 @@ O site foi criado pelos grupos do projeto interdisciplinar, com alunos responsá
 
 ## 💻 Acesso em:
 https://thaisqabe.github.io/livrosite/
+
 
 
