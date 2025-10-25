@@ -14,18 +14,23 @@
 /* formatacao da barra de rolagem */
 
 body::-webkit-scrollbar {
-    width: 12px;                /*largura da barra de rolagem */
+    width: 12px;
+    /*largura da barra de rolagem */
     background-color: #f5e0dc;
 }
 
 body::-webkit-scrollbar-track {
-    background: #f5e0dc;           /*cor de fundo da barra de rolagem */
+    background: #f5e0dc;
+    /*cor de fundo da barra de rolagem */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #e98391;  /*cor do scroll (thumb) da barra de rolagem */
-    border-radius: 20px;          /* arredondar o scroll (thumb) */
-    border: 3px solid #f5e0dc;     /* criar um espaco em volta do scroll */
+    background-color: #e98391;
+    /*cor do scroll (thumb) da barra de rolagem */
+    border-radius: 20px;
+    /* arredondar o scroll (thumb) */
+    border: 3px solid #f5e0dc;
+    /* criar um espaco em volta do scroll */
 }
 
 
@@ -151,6 +156,7 @@ p {
         margin-bottom: 10px;
         top: -70px !important;
         left: 12px;
+        z-index: 10000;
 
     }
 
@@ -165,16 +171,28 @@ p {
         align-items: center;
         gap: 1rem;
         padding: 1rem 0;
+
     }
 
+
+
     .navbar-collapse {
-        background: #eee8d8;
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        width: 100%;
+        background: #f5e0dc;
+        z-index: 1000;
         text-align: center;
         padding-bottom: 1rem;
     }
 
     .menu {
         height: 4rem;
+    }
+
+    .topbar p {
+        display: none;
     }
 }
 
